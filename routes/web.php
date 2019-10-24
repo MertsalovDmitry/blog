@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('blog.home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/about', 'AboutController@index')->name('about');
+Route::get('/blog', 'BlogController@index')->name('blog');
+Route::get('/shop', 'ShopController@index')->name('shop');
+Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
+Route::get('/contact', 'ContactController@index')->name('contact');

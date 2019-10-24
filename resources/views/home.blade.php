@@ -96,12 +96,12 @@
                             <!-- Navbar Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{ route('home') }}">Home</a></li>
+                                    <li><a href="{{ route('about') }}">About</a></li>
+                                    <li><a href="{{ route('blog') }}">Blog</a></li>
+                                    <li><a href="{{ route('shop') }}">Shop</a></li>
+                                    <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                                    <li><a href="{{ route('contact') }}">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
