@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('blog.layouts.default')
 @section('content')
     <!-- ##### Shop Area Start ##### -->
     <section class="shop-page section-padding-0-100">

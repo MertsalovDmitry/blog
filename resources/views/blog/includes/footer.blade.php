@@ -133,4 +133,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </footer>
 <!-- ##### Footer Area End ##### -->
 
-@include('includes.scripts')
+@include('blog.includes.scripts')

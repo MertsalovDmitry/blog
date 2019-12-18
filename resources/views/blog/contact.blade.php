@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('blog.layouts.default')
 @section('content')
     <!-- ##### Contact Area Info Start ##### -->
     <div class="contact-area-info section-padding-0-100">

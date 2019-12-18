@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('blog.layouts.default')
 @section('content')
     <!-- ##### Portfolio Area Start ##### -->
     <section class="alazea-portfolio-area portfolio-page section-padding-0-100">
