@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class PortfolioController extends Controller
 {
     public function index()
-    {
-        return view('blog.portfolio.index');
+    {   
+        $title = "Portfolio";
+        return view('blog.portfolio.index')->withTitle($title);
     }
 }

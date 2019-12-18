@@ -48,7 +48,7 @@
                 <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                     <!-- Nav Brand -->
-                    <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                    <a href="{{ route('home') }}" class="nav-brand"><img src="{{ asset('img/core-img/logo.png') }}" alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -69,8 +69,8 @@
                                 <li><a href="{{ route('home') }}">Home</a></li>
                                 <li><a href="{{ route('about') }}">About</a></li>
                                 <li><a href="{{ route('blog') }}">Blog</a></li>
-                                <li><a href="{{ route('shop') }}">Shop</a></li>
                                 <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                                <li><a href="{{ route('shop') }}">Shop</a></li>                               
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
                             </ul>
 
