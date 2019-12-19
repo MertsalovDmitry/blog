@@ -1,4 +1,5 @@
 @extends('blog.layouts.default')
+
 @section('content')
     <!-- ##### Shop Area Start ##### -->
     <section class="shop-page section-padding-0-100">
@@ -129,7 +130,7 @@
                                 <!-- Single Best Seller Products -->
                                 <div class="single-best-seller-product d-flex align-items-center">
                                     <div class="product-thumbnail">
-                                        <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/4.jpg') }}" alt=""></a>
                                     </div>
                                     <div class="product-info">
                                         <a href="shop-details.html">Cactus Flower</a>
@@ -147,7 +148,7 @@
                                 <!-- Single Best Seller Products -->
                                 <div class="single-best-seller-product d-flex align-items-center">
                                     <div class="product-thumbnail">
-                                        <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/5.jpg') }}" alt=""></a>
                                     </div>
                                     <div class="product-info">
                                         <a href="shop-details.html">Tulip Flower</a>
@@ -165,7 +166,7 @@
                                 <!-- Single Best Seller Products -->
                                 <div class="single-best-seller-product d-flex align-items-center">
                                     <div class="product-thumbnail">
-                                        <a href="shop-details.html"><img src="img/bg-img/34.jpg" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/34.jpg') }}" alt=""></a>
                                     </div>
                                     <div class="product-info">
                                         <a href="shop-details.html">Recuerdos Plant</a>
@@ -195,14 +196,14 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/40.png" alt=""></a>
+                                        <a href="{{ route('shop-details') }}"><img src="{{ asset('img/bg-img/40.png') }}" alt=""></a>
                                         <!-- Product Tag -->
                                         <div class="product-tag">
                                             <a href="#">Hot</a>
                                         </div>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                            <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
+                                            <a href="{{ route('shop-cart') }}" class="add-to-cart-btn">Add to cart</a>
                                             <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
                                         </div>
                                     </div>
@@ -221,7 +222,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/41.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/41.png') }}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -243,7 +244,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/42.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/42.png') }}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -265,7 +266,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/43.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/43.png') }}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -287,7 +288,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/44.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/44.png') }}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -309,7 +310,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/45.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/45.png') }}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -331,7 +332,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/46.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/46.png') }}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
@@ -353,7 +354,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/47.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/47.png') }}" alt=""></a>
                                         <!-- Product Tag -->
                                         <div class="product-tag sale-tag">
                                             <a href="#">Sale</a>
@@ -379,7 +380,7 @@
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="img/bg-img/48.png" alt=""></a>
+                                        <a href="shop-details.html"><img src="{{ asset('img/bg-img/48.png') }}" alt=""></a>
                                         <div class="product-meta d-flex">
                                             <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                             <a href="cart.html" class="add-to-cart-btn">Add to cart</a>

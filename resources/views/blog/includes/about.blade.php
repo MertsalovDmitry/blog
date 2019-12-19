@@ -9,7 +9,7 @@
             <div class="col-12 col-lg-5">
                 <!-- Section Heading -->
                 <div class="section-heading">
-                    <h2>About Us</h2>
+                    <h2>About Me</h2>
                     <p>We are leading in the plants service fields.</p>
                 </div>
                 <p>Quisque orci quam, vulputate non commodo finibus, molestie ac ante. Duis in sceleri quesem. Nulla sit amet varius nunc. Maecenas dui, tempeu ullam corper in.</p>

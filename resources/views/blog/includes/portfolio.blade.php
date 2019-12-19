@@ -41,7 +41,7 @@
                 <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/16.jpg);"></div>
                 <!-- Portfolio Hover Text -->
                 <div class="portfolio-hover-overlay">
-                    <a href="img/bg-img/16.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
+                    <a href="{{ route('portfolio-details') }}" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
                         <div class="port-hover-text">
                             <h3>Minimal Flower Store</h3>
                             <h5>Office Plants</h5>

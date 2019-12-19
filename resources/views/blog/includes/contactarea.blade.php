@@ -15,14 +15,8 @@
                         <h2>{{ $title }}</h2>
                         <p>We are improving our services to serve you better.</p>
                     </div>
-                    <!-- Contact Information -->
-                    <div class="contact-information">
-                        <p><span>Address:</span> 505 Silk Rd, New York</p>
-                        <p><span>Phone:</span> +1 234 122 122</p>
-                        <p><span>Email:</span> info.deercreative@gmail.com</p>
-                        <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
-                        <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
-                    </div>
+                    
+                    @include('blog.includes.contact-list')
                 </div>
             </div>
         </div>

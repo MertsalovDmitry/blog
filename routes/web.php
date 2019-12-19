@@ -15,10 +15,21 @@
 //     return view('home');
 // });
 
+Auth::routes();
+
 Route::get('/', 'HomeController@index')->name('home');
+
 Route::get('/about', 'AboutController@index')->name('about');
+
 Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/blog/post', 'BlogController@post')->name('single-post');
+
 Route::get('/shop', 'ShopController@index')->name('shop');
+Route::get('/shop/cart', 'ShopController@cart')->name('shop-cart');
+Route::get('/shop/checkout', 'ShopController@checkout')->name('shop-checkout');
+Route::get('/shop/details', 'ShopController@details')->name('shop-details');
+
 Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
+Route::get('/portfolio/details', 'PortfolioController@details')->name('portfolio-details');
+
 Route::get('/contact', 'ContactController@index')->name('contact');

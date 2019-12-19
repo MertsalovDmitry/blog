@@ -9,7 +9,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-footer-widget">
                         <div class="footer-logo mb-30">
-                            <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                            <a href="{{ route('home') }}">RDMITRY</a>
                         </div>
                         <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
                         <div class="social-info">
@@ -55,7 +55,7 @@
                         <!-- Single Best Seller Products -->
                         <div class="single-best-seller-product d-flex align-items-center">
                             <div class="product-thumbnail">
-                                <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+                                <a href="shop-details.html"><img src="{{ asset('img/bg-img/4.jpg') }}" alt=""></a>
                             </div>
                             <div class="product-info">
                                 <a href="shop-details.html">Cactus Flower</a>
@@ -66,7 +66,7 @@
                         <!-- Single Best Seller Products -->
                         <div class="single-best-seller-product d-flex align-items-center">
                             <div class="product-thumbnail">
-                                <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+                                <a href="shop-details.html"><img src="{{ asset('img/bg-img/5.jpg') }}" alt=""></a>
                             </div>
                             <div class="product-info">
                                 <a href="shop-details.html">Tulip Flower</a>
@@ -80,16 +80,10 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-footer-widget">
                         <div class="widget-title">
-                            <h5>CONTACT</h5>
+                            <h5>CONTACTS</h5>
                         </div>
 
-                        <div class="contact-information">
-                            <p><span>Address:</span> 505 Silk Rd, New York</p>
-                            <p><span>Phone:</span> +1 234 122 122</p>
-                            <p><span>Email:</span> info.deercreative@gmail.com</p>
-                            <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
-                            <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
-                        </div>
+                        @include('blog.includes.contact-list')
                     </div>
                 </div>
             </div>

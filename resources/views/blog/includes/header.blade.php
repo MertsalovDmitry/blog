@@ -9,8 +9,8 @@
                     <div class="top-header-content d-flex align-items-center justify-content-between">
                         <!-- Top Header Content -->
                         <div class="top-header-meta">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: rdmitry16@gmail.com</span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +38 (095) 860 57 38</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="rdmitry16@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: rdmitry16@gmail.com</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="+38 (095) 860 57 38"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Me: +38 (095) 860 57 38</span></a>
                         </div>
                         <!-- Top Header Content -->
                         <div class="top-header-meta d-flex">
@@ -27,11 +27,11 @@
                             </div>
                             <!-- Login -->
                             <div class="login">
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
+                                <a href="{{ route('login') }}"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
                             </div>
                             <!-- Cart -->
                             <div class="cart">
-                                <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
+                                <a href="{{ route('shop-cart') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,10 @@
                 <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                     <!-- Nav Brand -->
-                    <a href="{{ route('home') }}" class="nav-brand"><img src="{{ asset('img/core-img/logo.png') }}" alt=""></a>
+                    <a href="{{ route('home') }}" class="nav-brand">
+                        RDMITRY
+                        <!-- <img src="{{ asset('img/core-img/logo.png') }}" alt=""> -->
+                    </a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">

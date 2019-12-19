@@ -6,7 +6,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+    <title> {{ $title }}</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('img/core-img/favicon.ico') }}">

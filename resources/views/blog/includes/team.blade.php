@@ -18,7 +18,7 @@
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
                         <div class="team-member-thumb">
-                            <img src="img/bg-img/team1.png" alt="">
+                            <img src="{{ asset('img/bg-img/team1.png') }}" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -40,7 +40,7 @@
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
                         <div class="team-member-thumb">
-                            <img src="img/bg-img/team2.png" alt="">
+                            <img src="{{ asset('img/bg-img/team2.png') }}" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -62,7 +62,7 @@
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
                         <div class="team-member-thumb">
-                            <img src="img/bg-img/team3.png" alt="">
+                            <img src="{{ asset('img/bg-img/team3.png') }}" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -84,7 +84,7 @@
                     <div class="single-team-member text-center mb-100">
                         <!-- Team Member Thumb -->
                         <div class="team-member-thumb">
-                            <img src="img/bg-img/team4.png" alt="">
+                            <img src="{{ asset('img/bg-img/team4.png') }}" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>

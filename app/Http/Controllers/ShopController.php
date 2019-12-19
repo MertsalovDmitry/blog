@@ -11,4 +11,22 @@ class ShopController extends Controller
         $title = "Shop";
         return view('blog.shop.index')->withTitle($title);
     }
+
+    public function cart()
+    {   
+        $title = "Cart";
+        return view('blog.shop.cart')->withTitle($title);
+    }
+
+    public function checkout()
+    {   
+        $title = "Checkout";
+        return view('blog.shop.checkout')->withTitle($title);
+    }
+
+    public function details()
+    {   
+        $title = "Details";
+        return view('blog.shop.details')->withTitle($title);
+    }
 }

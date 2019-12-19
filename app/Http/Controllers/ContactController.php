@@ -8,7 +8,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-        $title = "Contact Us";
+        $title = "Contacts";
         return view('blog.contact.contact')->withTitle($title);
     }
 }
