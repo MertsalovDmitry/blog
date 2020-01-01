@@ -84,7 +84,7 @@
                             <h5>$9.99</h5>
                         </div>
                         <div class="checkout-btn">
-                            <a href="#" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
+                            <a href="{{ route('shop-checkout') }}" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
                         </div>
                     </div>
                 </div>
