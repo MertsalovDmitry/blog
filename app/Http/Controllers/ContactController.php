@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Contact;
 
 class ContactController extends Controller
 {
     public function index()
     {
         $title = "Contacts";
-        return view('blog.contact.contact')->withTitle($title);
+        $contacts = Contact::whereActive(true)->get();
+        return view('blog.contact.contact')->withTitle($title)
+                                           ->withContacts($contacts);
     }
 }
