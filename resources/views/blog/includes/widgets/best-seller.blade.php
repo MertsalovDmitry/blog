@@ -8,7 +8,7 @@
     <!-- Single Best Seller Products -->
     <div class="single-best-seller-product d-flex align-items-center">
         <div class="product-thumbnail">
-            <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+            <a href="shop-details.html"><img src="{{ asset('img/bg-img/4.jpg') }}" alt=""></a>
         </div>
         <div class="product-info">
             <a href="shop-details.html">Cactus Flower</a>
@@ -26,7 +26,7 @@
     <!-- Single Best Seller Products -->
     <div class="single-best-seller-product d-flex align-items-center">
         <div class="product-thumbnail">
-            <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+            <a href="shop-details.html"><img src="{{ asset('img/bg-img/5.jpg') }}" alt=""></a>
         </div>
         <div class="product-info">
             <a href="shop-details.html">Tulip Flower</a>
@@ -44,7 +44,7 @@
     <!-- Single Best Seller Products -->
     <div class="single-best-seller-product d-flex align-items-center">
         <div class="product-thumbnail">
-            <a href="shop-details.html"><img src="img/bg-img/34.jpg" alt=""></a>
+            <a href="shop-details.html"><img src="{{ asset('img/bg-img/34.jpg') }}" alt=""></a>
         </div>
         <div class="product-info">
             <a href="shop-details.html">Recuerdos Plant</a>
