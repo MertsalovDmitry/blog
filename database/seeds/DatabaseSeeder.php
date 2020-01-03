@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             MembersTableSeeder::class,
             FactsTableSeeder::class,
             ContactsTableSeeder::class,
+            TagsTableSeeder::class,
         ]);
     }
 }

@@ -6,13 +6,8 @@
     </div>
     <!-- Tags -->
     <ol class="popular-tags d-flex flex-wrap">
-        <li><a href="#">PLANTS</a></li>
-        <li><a href="#">NEW PRODUCTS</a></li>
-        <li><a href="#">CACTUS</a></li>
-        <li><a href="#">DESIGN</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">TRENDING</a></li>
-        <li><a href="#">VIDEO</a></li>
-        <li><a href="#">GARDEN DESIGN</a></li>
+        @foreach ($tags as $tag)
+            <li><a href="{{ $tag->url }}">{{ $tag->title }}</a></li>
+        @endforeach
     </ol>
 </div>
