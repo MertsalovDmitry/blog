@@ -20,7 +20,7 @@
                             @if (Route::currentRouteName() === 'shop-details' || Route::currentRouteName() === 'shop-cart' || Route::currentRouteName() === 'shop-checkout')
                                 <li class="breadcrumb-item"><a href="{{ route('shop') }}">Shop</a></li>
                             @endif
-                            <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
+                            <li class="breadcrumb-item active" aria-current="page">{{ $breadcrumb }}</li>
                         </ol>
                     </nav>
                 </div>

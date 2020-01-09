@@ -24,7 +24,7 @@
                                         <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>{{ date('d M Y', strtotime($post->created_at)) }}</a>
                                         <a href="#"><i class="fa fa-user" aria-hidden="true"></i> {{ $post->author->name }}</a>
                                     </div>
-                                    <p class="post-excerpt">{{ Str::limit($post->body, 106) }} Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                                    <p class="post-excerpt">{{ str_limit( $post->body, 130, ' ...') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="single-blog-post mb-50">
                                 <div class="post-thumbnail mb-30">
-                                    <a href="{{ route('single-post') }}"><img src="img/bg-img/6.jpg" alt=""></a>
+                                    <a href="#"><img src="img/bg-img/6.jpg" alt=""></a>
                                 </div>
                                 <div class="post-content">
                                     <a href="single-post.html" class="post-title">

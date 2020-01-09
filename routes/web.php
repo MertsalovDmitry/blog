@@ -22,7 +22,10 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/about', 'AboutController@index')->name('about');
 
 Route::get('/blog', 'BlogController@index')->name('blog');
-Route::get('/blog/post', 'BlogController@post')->name('single-post');
+// Route::get('/blog/post', 'BlogController@post')->name('single-post');
+
+Route::get('/blog/{slug}', 'BlogController@post')->name('single-post');
+
 
 Route::get('/shop', 'ShopController@index')->name('shop');
 Route::get('/shop/cart', 'ShopController@cart')->name('shop-cart');

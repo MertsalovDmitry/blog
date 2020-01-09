@@ -12,6 +12,7 @@ class BlogController extends Controller
     public function index()
     {
         $title = "Blog";
+        $breadcrumb = "Blog";
         $contacts = Contact::whereActive(true)->get();
         $tags = Tag::all();
         // $posts = Post::with('tags')->get();
@@ -20,16 +21,28 @@ class BlogController extends Controller
         return view('blog.blog.index')->withTitle($title)
                                       ->withContacts($contacts)
                                       ->withTags($tags)
-                                      ->withPosts($posts);
+                                      ->withPosts($posts)
+                                      ->withBreadcrumb($breadcrumb);
     }
 
-    public function post()
+    public function post($slug)
     {
         $title = "Single Blog Post";
         $contacts = Contact::whereActive(true)->get();
         $tags = Tag::all();
-        return view('blog.blog.details')->withTitle($title)
+        $post = Post::whereActive(true)->where('slug', $slug)->with('tags')->first();
+        $author = $post->author();
+        // $postTags = $post->tags();
+        if($post)
+            {
+                //$title = $post->title;
+                $breadcrumb = $post->title;
+                return view('blog.blog.details')->withTitle($title)
                                         ->withContacts($contacts)
-                                        ->withTags($tags);
+                                        ->withTags($tags)
+                                        ->withPost($post)
+                                        // ->withPostTags($postTags)
+                                        ->withBreadcrumb($breadcrumb);
+            }
     }
 }

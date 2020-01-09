@@ -13,6 +13,7 @@ class AboutController extends Controller
     public function index()
     {
         $title = "About";
+        $breadcrumb = "About";
         $testimonials = Testimonial::whereActive(true)->get();
         $members = Member::whereActive(true)->get();
         $facts = Fact::whereActive(true)->get();
@@ -21,6 +22,7 @@ class AboutController extends Controller
                                        ->withTestimonials($testimonials)
                                        ->withMembers($members)
                                        ->withFacts($facts)
-                                       ->withContacts($contacts);
+                                       ->withContacts($contacts)
+                                       ->withBreadcrumb($breadcrumb);
     }
 }

@@ -12,7 +12,7 @@ class TagsPostsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('tag_post')->insert( [
+        DB::table('post_tag')->insert( [
             [
                 'tag_id' => '1',
                 'post_id' => '1',
