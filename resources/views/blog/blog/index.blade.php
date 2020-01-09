@@ -8,6 +8,29 @@
                 <div class="col-12 col-md-8">
                     <div class="row">
 
+                        @if($posts->count())    
+                        @foreach ($posts as $post)
+                        <!-- Single Blog Post Area -->
+                        <div class="col-12 col-lg-6">
+                            <div class="single-blog-post mb-50">
+                                <div class="post-thumbnail mb-30">
+                                    <a href="{{ route('single-post', $post->slug) }}"><img src="img/bg-img/6.jpg" alt=""></a>
+                                </div>
+                                <div class="post-content">
+                                    <a href="{{ route('single-post', $post->slug) }}" class="post-title">
+                                        <h5>{{ $post->title }}</h5>
+                                    </a>
+                                    <div class="post-meta">
+                                        <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>{{ date('d M Y', strtotime($post->created_at)) }}</a>
+                                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> {{ $post->author->name }}</a>
+                                    </div>
+                                    <p class="post-excerpt">{{ Str::limit($post->body, 106) }} Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                        @endif
+
                         <!-- Single Blog Post Area -->
                         <div class="col-12 col-lg-6">
                             <div class="single-blog-post mb-50">
