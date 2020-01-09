@@ -2642,3 +2642,8 @@ img {
 /* ======= The End ======= */
 
 /*# sourceMappingURL=style.css.map */
+
+.page-item.active .page-link {
+  background-color: #fff;
+  border-color: #fff;
+}

@@ -17,7 +17,7 @@ class BlogController extends Controller
         $tags = Tag::all();
         // $posts = Post::with('tags')->get();
         // $posts = Post::all();
-        $posts = Post::with('author')->get();
+        $posts = Post::whereActive(true)->with('author')->paginate(6);
         return view('blog.blog.index')->withTitle($title)
                                       ->withContacts($contacts)
                                       ->withTags($tags)
