@@ -2,8 +2,9 @@
 <div class="leave-comment-area clearfix">
     <div class="comment-form">
         <h4 class="headline">Leave A Comment</h4>
-
-        <div class="contact-form-area">
+            <div class="contact-form-area">
+            
+            @if (Auth::check())
             <!-- Comment Form -->
             <form action="#" method="post">
                 <div class="row">
@@ -26,7 +27,13 @@
                         <button type="submit" class="btn alazea-btn">Post Comment</button>
                     </div>
                 </div>
-            </form>
+            </form>       
+            @else
+                <div class="row">
+                    <p>Чтобы оставить комментарий, войдите в систему</p>
+                </div>
+            @endif
+
         </div>
     </div>
 </div>

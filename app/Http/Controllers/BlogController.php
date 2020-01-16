@@ -31,7 +31,7 @@ class BlogController extends Controller
         $contacts = Contact::whereActive(true)->get();
         $tags = Tag::all();
         $post = Post::whereActive(true)->where('slug', $slug)->with('tags')->first();
-        $author = $post->author();
+        // $author = $post->author();
         // $postTags = $post->tags();
         if($post)
             {

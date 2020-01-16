@@ -48,66 +48,14 @@
                         </div>
 
                         <!-- Comment Area Start -->
+                        @if (isset($post->comments))
                         <div class="comment_area clearfix">
-                            <h4 class="headline">2 Comments</h4>
-
-                            <ol>
-                                <!-- Single Comment Area -->
-                                <li class="single_comment_area">
-                                    <div class="comment-wrapper d-flex">
-                                        <!-- Comment Meta -->
-                                        <div class="comment-author">
-                                            <img src="{{ asset('img/bg-img/37.jpg') }}" alt="">
-                                        </div>
-                                        <!-- Comment Content -->
-                                        <div class="comment-content">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <h5>Simona Halep</h5>
-                                                <span class="comment-date">09:00 AM,  20 Jun 2018</span>
-                                            </div>
-                                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
-                                            <a class="active" href="#">Reply</a>
-                                        </div>
-                                    </div>
-                                    <ol class="children">
-                                        <li class="single_comment_area">
-                                            <div class="comment-wrapper d-flex">
-                                                <!-- Comment Meta -->
-                                                <div class="comment-author">
-                                                    <img src="{{ asset('img/bg-img/38.jpg') }}" alt="">
-                                                </div>
-                                                <!-- Comment Content -->
-                                                <div class="comment-content">
-                                                    <div class="d-flex align-items-center justify-content-between">
-                                                        <h5>Rafael Nadal</h5>
-                                                        <span class="comment-date">09:30 AM,  20 Jun 2018</span>
-                                                    </div>
-                                                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
-                                                    <a class="active" href="#">Reply</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ol>
-                                </li>
-                                <li class="single_comment_area">
-                                    <div class="comment-wrapper d-flex">
-                                        <!-- Comment Meta -->
-                                        <div class="comment-author">
-                                            <img src="{{ asset('img/bg-img/39.jpg') }}" alt="">
-                                        </div>
-                                        <!-- Comment Content -->
-                                        <div class="comment-content">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <h5>Maria Sharapova</h5>
-                                                <span class="comment-date">02:20 PM,  20 Jun 2018</span>
-                                            </div>
-                                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi</p>
-                                            <a class="active" href="#">Reply</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ol>
+                            <h4 class="headline">{{ $post->comments->count() }} Comments</h4>
+                                <ol>
+                                    @include('blog.includes.comments.comments', ['comments' => $post->comments, 'post_id' => $post->id])
+                                </ol>
                         </div>
+                        @endif                       
 
                         @include('blog.includes.comments.comment-form')
     
