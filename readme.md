@@ -22,7 +22,7 @@ Stages:
 # Stack
 
 - [Laravel](https://laravel.com/)
-- [Alazea](https://colorlib.com) - template by Colorlib
+- [Alazea](https://colorlib.com) - html template by Colorlib
 
 
 

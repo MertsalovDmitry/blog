@@ -68,7 +68,7 @@ class UsersTableSeeder extends Seeder
                 'about' => 'I’m the editor for houseplants',
                 'role' => 'author',
                 'position' => 'Actress',
-                'image' => 'img/bg-img/29.jpg',
+                'image' => 'img/bg-img/37.jpg',
                 'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
                 'remember_token' => str_random(10),
                 'created_at' => Carbon::now(),
@@ -80,7 +80,7 @@ class UsersTableSeeder extends Seeder
                 'about' => 'I’m the editor for houseplants',
                 'role' => 'author',
                 'position' => 'TennisMan',
-                'image' => 'img/bg-img/29.jpg',
+                'image' => 'img/bg-img/38.jpg',
                 'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
                 'remember_token' => str_random(10),
                 'created_at' => Carbon::now(),
@@ -92,7 +92,7 @@ class UsersTableSeeder extends Seeder
                 'about' => 'I’m the editor for houseplants',
                 'role' => 'author',
                 'position' => 'TennisWoman',
-                'image' => 'img/bg-img/29.jpg',
+                'image' => 'img/bg-img/39.jpg',
                 'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
                 'remember_token' => str_random(10),
                 'created_at' => Carbon::now(),

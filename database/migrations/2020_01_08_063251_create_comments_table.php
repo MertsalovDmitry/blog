@@ -23,7 +23,7 @@ class CreateCommentsTable extends Migration
             // $table->foreign('user_id')
             //       ->references('id')->on('users')
             //       ->onDelete('cascade');
-            $table->integer('parent_id')->unsigned();   
+            $table->integer('parent_id')->unsigned()->default(0);   
             $table->text('body');
             $table->boolean('active')->default(true);
             $table->integer('commentable_id')->unsigned();

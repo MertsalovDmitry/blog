@@ -6,25 +6,17 @@
             
             @if (Auth::check())
             <!-- Comment Form -->
-            <form action="#" method="post">
+            <form  method="post" action="{{ route('comment.add') }}">
+                @csrf
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="contact-name" placeholder="Name">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                            <textarea class="form-control" name="comment_body" id="comment_body" cols="30" rows="10" placeholder="Comment"></textarea>
+                            <input type="hidden" name="post_id" value="{{ $post->id }}" />
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn alazea-btn">Post Comment</button>
+                        <button type="submit" class="btn alazea-btn">Add Comment</button>
                     </div>
                 </div>
             </form>       
