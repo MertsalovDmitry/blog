@@ -10,6 +10,7 @@
 # About Project
 
 Project for myself to fill how it works in Laravel
+
 Includes pages & parts:
 - home , about, blog, portfolio, shop, contact
 
