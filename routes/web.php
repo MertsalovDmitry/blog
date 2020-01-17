@@ -24,6 +24,8 @@ Route::get('/about', 'AboutController@index')->name('about');
 Route::get('/blog', 'BlogController@index')->name('blog');
 // Route::get('/blog/post', 'BlogController@post')->name('single-post');
 Route::get('/blog/{slug}', 'BlogController@post')->name('single-post');
+Route::post('/comment/store', 'CommentController@store')->name('comment.add');
+Route::post('/reply/store', 'CommentController@replyStore')->name('reply.add');
 
 
 Route::get('/shop', 'ShopController@index')->name('shop');

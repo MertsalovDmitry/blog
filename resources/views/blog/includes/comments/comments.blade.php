@@ -10,7 +10,7 @@
         <div class="comment-content">
             <div class="d-flex align-items-center justify-content-between">
                 <h5>{{ $comment->user->name }}</h5>
-                <span class="comment-date">09:00 AM, 20 Jun 2018</span>
+                <span class="comment-date">{{ date('G:i, d M Y', strtotime($comment->created_at)) }}</span>
             </div>
             <p>{{ $comment->body }}</p>
             <a class="active" href="#">Reply</a>
