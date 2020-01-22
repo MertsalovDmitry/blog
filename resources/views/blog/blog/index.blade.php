@@ -14,10 +14,10 @@
                         <div class="col-12 col-lg-6">
                             <div class="single-blog-post mb-50">
                                 <div class="post-thumbnail mb-30">
-                                    <a href="{{ route('single-post', $post->slug) }}"><img src="img/bg-img/6.jpg" alt=""></a>
+                                    <a href="{{ route('post', $post->slug) }}"><img src="{{ asset($post->image) }}" alt=""></a>
                                 </div>
                                 <div class="post-content">
-                                    <a href="{{ route('single-post', $post->slug) }}" class="post-title">
+                                    <a href="{{ route('post', $post->slug) }}" class="post-title">
                                         <h5>{{ $post->title }}</h5>
                                     </a>
                                     <div class="post-meta">

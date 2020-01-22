@@ -5,8 +5,8 @@
             <div class="col-12">
                 <!-- Section Heading -->
                 <div class="section-heading text-center">
-                    <h2>OUR SERVICES</h2>
-                    <p>We provide the perfect service for you.</p>
+                    <h2>SERVICES</h2>
+                    <p>I provide the perfect service for you.</p>
                 </div>
             </div>
         </div>

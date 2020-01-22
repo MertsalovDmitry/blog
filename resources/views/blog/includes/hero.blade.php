@@ -15,8 +15,8 @@
                             <h2>{{ $hero->header }}</h2>
                             <p>{{ $hero->paragraph }}</p>
                             <div class="welcome-btn-group">
-                                <a href="{{ route('about') }}" class="btn alazea-btn mr-30">GET STARTED</a>
-                                <a href="{{ route('contact') }}" class="btn alazea-btn active">CONTACT US</a>
+                                <a href="{{ route('about') }}" class="btn alazea-btn mr-30">ABOUT</a>
+                                <a href="{{ route('contact') }}" class="btn alazea-btn active">CONTACT ME</a>
                             </div>
                         </div>
                     </div>

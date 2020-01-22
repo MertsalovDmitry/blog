@@ -15,6 +15,7 @@
             <p>{{ $comment->body }}</p>
             <!-- <a class="active" href="#">Reply</a> -->
 
+            @if (Auth::check())
             <!-- Comment Form -->
             <form  method="post" action="{{ route('reply.add') }}">
                 @csrf
@@ -31,6 +32,7 @@
                     </div>
                 </div>
             </form>
+            @endif
 
         </div>
     </div>

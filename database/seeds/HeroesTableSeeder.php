@@ -16,8 +16,8 @@ class HeroesTableSeeder extends Seeder
         DB::table('heroes')->insert( [
             [
                 'image' => 'img/bg-img/1.jpg',
-                'header' => 'Plants exist in the weather and light rays that surround them',
-                'paragraph' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.',
+                'header' => 'WEB DEVELOPMENT',
+                'paragraph' => 'Create web projects with PHP / Laravel / JS / Vue.js / JQuery / HTML / CSS / Bootstrap',
                 'active' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
@@ -25,8 +25,8 @@ class HeroesTableSeeder extends Seeder
             ],
             [
                 'image' => 'img/bg-img/2.jpg',
-                'header' => 'Plants exist in the weather and light rays that surround them',
-                'paragraph' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.',
+                'header' => 'IT Outsourcing',
+                'paragraph' => 'Technical Support /  Install & Setup OS Windows / Repair computers',
                 'active' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()

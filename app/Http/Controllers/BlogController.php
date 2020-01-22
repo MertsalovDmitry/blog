@@ -18,10 +18,12 @@ class BlogController extends Controller
         // $posts = Post::with('tags')->get();
         // $posts = Post::all();
         $posts = Post::whereActive(true)->with('author')->paginate(6);
+        $recent = Post::whereActive(true)->with('author')->latest('created_at')->limit(4)->get();
         return view('blog.blog.index')->withTitle($title)
                                       ->withContacts($contacts)
                                       ->withTags($tags)
                                       ->withPosts($posts)
+                                      ->withRecent($recent)
                                       ->withBreadcrumb($breadcrumb);
     }
 
@@ -31,8 +33,7 @@ class BlogController extends Controller
         $contacts = Contact::whereActive(true)->get();
         $tags = Tag::all();
         $post = Post::whereActive(true)->where('slug', $slug)->with('tags')->first();
-        // $author = $post->author();
-        // $postTags = $post->tags();
+        $recent = Post::whereActive(true)->with('author')->latest('created_at')->limit(4)->get();
         if($post)
             {
                 //$title = $post->title;
@@ -41,6 +42,7 @@ class BlogController extends Controller
                                         ->withContacts($contacts)
                                         ->withTags($tags)
                                         ->withPost($post)
+                                        ->withRecent($recent)
                                         // ->withPostTags($postTags)
                                         ->withBreadcrumb($breadcrumb);
             }

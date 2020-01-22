@@ -22,10 +22,10 @@
                             <img src="{{ $member->image }}" alt="">
                             <!-- Social Info -->
                             <div class="team-member-social-info">
-                                <a href="{{ $member->facebook }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="{{ $member->vk }}"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                                <a href="{{ $member->linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href="{{ $member->telegram }}"><i class="fa fa-telegram" aria-hidden="true"></i></a>                                                               
+                                <a target="_blank" href="{{ $member->facebook }}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a target="_blank" href="{{ $member->vk }}"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                                <a target="_blank" href="{{ $member->linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a target="_blank" href="{{ $member->telegram }}"><i class="fa fa-telegram" aria-hidden="true"></i></a>                                                               
                             </div>
                         </div>
                         <!-- Team Member Info -->

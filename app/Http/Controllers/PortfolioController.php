@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Contact;
+use App\ProjectCategory;
+use App\Project;
 
 class PortfolioController extends Controller
 {
@@ -12,18 +14,24 @@ class PortfolioController extends Controller
         $title = "Portfolio";
         $breadcrumb = "Portfolio";
         $contacts = Contact::whereActive(true)->get();
+        $categories = ProjectCategory::all();
+        $projects = Project::whereActive(true)->get();
         return view('blog.portfolio.index')->withTitle($title)
                                            ->withContacts($contacts)
-                                           ->withBreadcrumb($breadcrumb);
+                                           ->withBreadcrumb($breadcrumb)
+                                           ->withProjectCategories($categories)
+                                           ->withProjects($projects);
     }
 
-    public function details()
+    public function project($slug)
     {   
         $title = "Details";
         $breadcrumb = "Details";
         $contacts = Contact::whereActive(true)->get();
+        $project = Project::whereActive(true)->where('slug', $slug)->with('categories')->first();
         return view('blog.portfolio.details')->withTitle($title)
                                              ->withContacts($contacts)
-                                             ->withBreadcrumb($breadcrumb);
+                                             ->withBreadcrumb($breadcrumb)
+                                             ->withProject($project);
     }
 }

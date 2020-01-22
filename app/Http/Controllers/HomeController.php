@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Hero;
 use App\Testimonial;
 use App\Contact;
+use App\ProjectCategory;
+use App\Project;
 
 class HomeController extends Controller
 {
@@ -25,9 +27,13 @@ class HomeController extends Controller
         $heroes  = Hero::whereActive(true)->get();
         $testimonials = Testimonial::whereActive(true)->get();
         $contacts = Contact::whereActive(true)->get();
+        $categories = ProjectCategory::all();
+        $projects = Project::whereActive(true)->get();
         return view('blog.index')->withTitle($title)
                                  ->withHeroes($heroes)
                                  ->withTestimonials($testimonials)
-                                 ->withContacts($contacts);
+                                 ->withContacts($contacts)
+                                 ->withProjectCategories($categories)
+                                 ->withProjects($projects);
     }
 }

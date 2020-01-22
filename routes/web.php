@@ -23,7 +23,7 @@ Route::get('/about', 'AboutController@index')->name('about');
 
 Route::get('/blog', 'BlogController@index')->name('blog');
 // Route::get('/blog/post', 'BlogController@post')->name('single-post');
-Route::get('/blog/{slug}', 'BlogController@post')->name('single-post');
+Route::get('/blog/{slug}', 'BlogController@post')->name('post');
 Route::post('/comment/store', 'CommentController@store')->name('comment.add');
 Route::post('/reply/store', 'CommentController@replyStore')->name('reply.add');
 
@@ -34,7 +34,7 @@ Route::get('/shop/checkout', 'ShopController@checkout')->name('shop-checkout');
 Route::get('/shop/details', 'ShopController@details')->name('shop-details');
 
 Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
-Route::get('/portfolio/details', 'PortfolioController@details')->name('portfolio-details');
+Route::get('/portfolio/{slug}', 'PortfolioController@project')->name('project');
 
 Route::get('/contact', 'ContactController@index')->name('contact');
 

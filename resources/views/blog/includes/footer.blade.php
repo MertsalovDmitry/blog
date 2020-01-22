@@ -11,7 +11,7 @@
                         <div class="footer-logo mb-30">
                             <a href="{{ route('home') }}">RDMITRY</a>
                         </div>
-                        <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
+                        <p>My social</p>
                         <div class="social-info">
                             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
