@@ -33,21 +33,17 @@
             </div>
         </div>
 
+        @if($project->slides->count())
         <!-- Portfolio Slides -->
         <div class="portfolio-slides owl-carousel mb-100">
             <!-- Single Portfolio Slide -->
+            @foreach($project->slides as $slide)
             <div class="single-portfolio-slide">
-                <img src="{{ asset('img/bg-img/26.jpg') }}" alt="">
+                <img src="{{ asset($slide->image) }}" alt="{{ $slide->title }}">
             </div>
-            <!-- Single Portfolio Slide -->
-            <div class="single-portfolio-slide">
-                <img src="{{ asset('img/bg-img/27.jpg') }}" alt="">
-            </div>
-            <!-- Single Portfolio Slide -->
-            <div class="single-portfolio-slide">
-                <img src="{{ asset('img/bg-img/28.jpg') }}" alt="">
-            </div>
+            @endforeach
         </div>
+        @endif
 
         <div class="container">
             <div class="row justify-content-between">
@@ -69,7 +65,7 @@
                         <p> 
                             @foreach($project->categories as $cat) 
                                 {{ $cat->title }}
-                                @if($cat != $project->categories->last())
+                                @if(!$loop->last)
                                     ,
                                 @endif
                             @endforeach

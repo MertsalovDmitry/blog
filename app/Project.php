@@ -10,4 +10,9 @@ class Project extends Model
     {
         return $this->belongsToMany('App\ProjectCategory');
     }
+
+    public function slides()
+    {
+        return $this->hasMany('App\ProjectSlide');
+    }
 }

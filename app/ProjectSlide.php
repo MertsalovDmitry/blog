@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProjectCategory extends Model
+class ProjectSlide extends Model
 {
     public function project()
     {
-        return $this->belongsToMany('App\Project');
+        return $this->belongsTo('App\Project');
     }
 }

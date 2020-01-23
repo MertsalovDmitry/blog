@@ -28,7 +28,7 @@ class PortfolioController extends Controller
         $title = "Details";
         $breadcrumb = "Details";
         $contacts = Contact::whereActive(true)->get();
-        $project = Project::whereActive(true)->where('slug', $slug)->with('categories')->first();
+        $project = Project::whereActive(true)->where('slug', $slug)->with('categories')->with('slides')->first();
         return view('blog.portfolio.details')->withTitle($title)
                                              ->withContacts($contacts)
                                              ->withBreadcrumb($breadcrumb)
